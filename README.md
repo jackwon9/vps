@@ -14,7 +14,11 @@ systemctl status firewalld
 centos：yum install ca-certificates wget -y && update-ca-trust force-enable  
 debian/ubuntu：apt-get install ca-certificates wget -y && update-ca-certificates  
 wget -N "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh  
-  
+或者Debian系统
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+sysctl -p
+lsmod | grep bbr
   
 【ccaa安装】  
 bash <(curl -Lsk https://raw.githubusercontent.com/jackwon9/ccaa/master/ccaa.sh)  
