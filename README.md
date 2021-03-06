@@ -37,13 +37,13 @@ mkdir /etc/filebrowser/
 vi /etc/filebrowser/config.json  
 #复制下面的内容保存到/etc/filebrowser/config.json  
 {  
-    "address":"0.0.0.0",  
-    "database":"/etc/filebrowser/filebrowser.db",  
-    "log":"/var/log/filebrowser.log",  
-    "port":8080,  
-    "root":"/",  
-    "username":"admin"  
-}  
+      "address":"0.0.0.0",  
+      "database":"/etc/filebrowser/filebrowser.db",  
+      "log":"/var/log/filebrowser.log",  
+      "port":8080,  
+      "root":"/home",  
+      "username":"admin"  
+}    
 #保持在后台运行，执行  
 nohup filebrowser -c /etc/filebrowser/config.json &  
   
