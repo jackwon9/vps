@@ -40,7 +40,7 @@ vi /etc/filebrowser/config.json
     "address":"0.0.0.0",  
     "database":"/etc/filebrowser/filebrowser.db",  
     "log":"/var/log/filebrowser.log",  
-    "port":6800,  
+    "port":8080,  
     "root":"/",  
     "username":"admin"  
 }  
