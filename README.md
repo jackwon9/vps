@@ -1,26 +1,26 @@
-修改时间  
+【修改时间】  
 timedatectl set-local-rtc 1  
 timedatectl set-timezone Asia/Shanghai  
 date  
   
   
-关闭firewalld防火墙  
+【关闭firewalld防火墙】  
 systemctl disable firewalld  
 systemctl stop firewalld  
 systemctl status firewalld  
   
   
-BBR相关  
+【BBR相关】  
 centos：yum install ca-certificates wget -y && update-ca-trust force-enable  
 debian/ubuntu：apt-get install ca-certificates wget -y && update-ca-certificates  
 wget -N "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh  
   
   
-ccaa安装  
+【ccaa安装】  
 bash <(curl -Lsk https://raw.githubusercontent.com/jackwon9/ccaa/master/ccaa.sh)  
   
    
-手动安装File Browser文件管理器  
+【手动安装File Browser文件管理器】  
 #下载File Browser  
 wget https://github.com/filebrowser/filebrowser/releases/download/v2.12.0/linux-amd64-filebrowser.tar.gz  
 #解压  
@@ -43,7 +43,7 @@ vi /etc/filebrowser/config.json
 nohup filebrowser -c /etc/filebrowser/config.json  
   
   
-Aria2 一键安装管理脚本 增强版  
+【Aria2 一键安装管理脚本 增强版】  
 apt install wget curl ca-certificates  
 wget -N git.io/aria2.sh && chmod +x aria2.sh  
 #其他操作  
