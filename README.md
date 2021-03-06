@@ -61,7 +61,9 @@ https://cyhour.com/1110/
 
 
 【rclone挂载谷歌团队网盘】  
-https://omo.moe/archives/103/
+apt-get install fuse  
+apt-get install rclone  
+rclone config  
 
      
 【v2ray安装】     
