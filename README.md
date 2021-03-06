@@ -1,6 +1,3 @@
-vps配置与搭建
-
-
 修改时间
 timedatectl set-local-rtc 1
 timedatectl set-timezone Asia/Shanghai
