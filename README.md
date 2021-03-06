@@ -47,5 +47,5 @@ nohup filebrowser -c /etc/filebrowser/config.json
 apt install wget curl ca-certificates  
 wget -N git.io/aria2.sh && chmod +x aria2.sh  
 #其他操作  
-service aria2 start|stop|restart|status  
+service aria2 start | stop | restart | status  
 配置文件路径：/root/.aria2c/aria2.conf  
