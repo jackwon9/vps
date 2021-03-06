@@ -49,3 +49,24 @@ wget -N git.io/aria2.sh && chmod +x aria2.sh
 #其他操作  
 service aria2 start | stop | restart | status  
 配置文件路径：/root/.aria2c/aria2.conf  
+  
+  
+【BuyVM Block Storage（数据盘）挂载方法】  
+https://cyhour.com/1110/  
+
+
+【rclone挂载谷歌团队网盘】  
+https://omo.moe/archives/103/
+
+     
+【v2ray安装】     
+wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jackwon9/v2ray/main/install.sh" && chmod +x install.sh && bash install.sh  
+
+     
+【Linux更新指令】  
+https://www.cnblogs.com/qiantan/p/11167276.html  
+
+
+【其他指令】  
+Debian/Ubuntu：apt-get install fuse  
+Centos：yum install fuse
