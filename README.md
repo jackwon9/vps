@@ -64,6 +64,7 @@ https://cyhour.com/1110/
 apt-get install fuse  
 apt-get install rclone  
 rclone config  
+https://omo.moe/archives/103/  
 
      
 【v2ray安装】     
