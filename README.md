@@ -40,7 +40,7 @@ vi /etc/filebrowser/config.json
     "username":"admin"  
 }  
 #保持在后台运行，执行  
-nohup filebrowser -c /etc/filebrowser/config.json  
+nohup filebrowser -c /etc/filebrowser/config.json &  
   
   
 【Aria2 一键安装管理脚本 增强版】  
