@@ -14,7 +14,7 @@ systemctl status firewalld
 ```
 
   
-###   【BBR相关】  
+###   【BBR相关】 https://github.com/ylx2016/Linux-NetSpeed   
 ```bash
 centos：yum install ca-certificates wget -y && update-ca-trust force-enable  
 debian/ubuntu：apt-get install ca-certificates wget -y && update-ca-certificates  
@@ -26,8 +26,7 @@ echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf  
 sysctl -p  
 lsmod | grep bbr  
-```
-https://github.com/ylx2016/Linux-NetSpeed  
+```  
 
    
 ###   【ccaa安装】  
