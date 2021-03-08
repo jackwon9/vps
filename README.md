@@ -35,7 +35,10 @@ bash <(curl -Lsk https://raw.githubusercontent.com/jackwon9/ccaa/master/ccaa.sh)
 ``` 
  
    
-###   【手动安装File Browser文件管理器】  
+###   【手动安装File Browser文件管理器】 
+```link
+https://www.xiaoz.me/archives/14299#
+```
 #下载File Browser  
 ```bash
 wget https://github.com/filebrowser/filebrowser/releases/download/v2.12.0/linux-amd64-filebrowser.tar.gz  
