@@ -97,7 +97,8 @@ https://omo.moe/archives/103/
 ```bash
 wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jackwon9/v2ray/main/install.sh" && chmod +x install.sh && bash install.sh  
 ```
-
+在/home/wwwroot/3DCEList/里添加***.txt作订阅链接  
+  
      
 ### 【Linux更新指令】  
 ```bash
