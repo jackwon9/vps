@@ -35,8 +35,7 @@ bash <(curl -Lsk https://raw.githubusercontent.com/jackwon9/ccaa/master/ccaa.sh)
 ``` 
  
    
-###   【手动安装File Browser文件管理器】 
-https://www.xiaoz.me/archives/14299  
+###   【手动安装File Browser文件管理器】 https://www.xiaoz.me/archives/14299  
 #下载File Browser  
 ```bash
 wget https://github.com/filebrowser/filebrowser/releases/download/v2.12.0/linux-amd64-filebrowser.tar.gz  
@@ -71,8 +70,7 @@ nohup filebrowser -c /etc/filebrowser/config.json &
 ```
 
   
-###   【Aria2 一键安装管理脚本 增强版】  
-https://github.com/P3TERX/aria2.sh       
+###   【Aria2 一键安装管理脚本 增强版】  https://github.com/P3TERX/aria2.sh       
 ```bash
 apt install wget curl ca-certificates  
 wget -N git.io/aria2.sh && chmod +x aria2.sh  
@@ -82,17 +80,15 @@ service aria2 start | stop | restart | status
 配置文件路径：/root/.aria2c/aria2.conf  
   
   
-###   【BuyVM Block Storage（数据盘）挂载方法】  
-https://cyhour.com/1110/  
+###   【BuyVM Block Storage（数据盘）挂载方法】  https://cyhour.com/1110/  
 
 
-### 【rclone挂载谷歌团队网盘】  
+### 【rclone挂载谷歌团队网盘】  https://omo.moe/archives/103/  
 ```bash
 apt-get install fuse  
 apt-get install rclone  
 rclone config  
 ```
-https://omo.moe/archives/103/  
 
      
 ### 【v2ray安装】     
@@ -102,10 +98,7 @@ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.c
 在/home/wwwroot/3DCEList/里添加***.txt作订阅链接  
   
      
-### 【Linux更新指令】  
-```bash
-https://www.cnblogs.com/qiantan/p/11167276.html  
-```
+### 【Linux更新指令】   https://www.cnblogs.com/qiantan/p/11167276.html  
 
 
 ### 【其他指令】  
