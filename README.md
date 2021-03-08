@@ -72,7 +72,7 @@ nohup filebrowser -c /etc/filebrowser/config.json &
 
   
 ###   【Aria2 一键安装管理脚本 增强版】  
-https://github.com/P3TERX/aria2.sh  
+https://github.com/P3TERX/aria2.sh     
 ```bash
 apt install wget curl ca-certificates  
 wget -N git.io/aria2.sh && chmod +x aria2.sh  
