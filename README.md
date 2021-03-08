@@ -27,6 +27,7 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p  
 lsmod | grep bbr  
 ```
+https://github.com/ylx2016/Linux-NetSpeed  
 
    
 ###   【ccaa安装】  
