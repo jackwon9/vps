@@ -38,7 +38,7 @@ bash <(curl -Lsk https://raw.githubusercontent.com/jackwon9/ccaa/master/ccaa.sh)
 ##   【手动安装File Browser文件管理器】 https://www.xiaoz.me/archives/14299  
 #下载File Browser  
 ```bash
-wget https://github.com/filebrowser/filebrowser/releases/download/v2.12.0/linux-amd64-filebrowser.tar.gz  
+wget https://github.com/filebrowser/filebrowser/releases/download/v2.14.1/linux-amd64-filebrowser.tar.gz  
 ```
 #解压  
 ```bash
@@ -60,7 +60,7 @@ vi /etc/filebrowser/config.json
       "database":"/etc/filebrowser/filebrowser.db",  
       "log":"/var/log/filebrowser.log",  
       "port":8080,  
-      "root":"/home",  
+      "root":"/",  
       "username":"admin"  
 }    
 ```
