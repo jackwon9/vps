@@ -96,6 +96,8 @@ rclone config
 wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jackwon9/v2ray/main/install.sh" && chmod +x install.sh && bash install.sh  
 ```
 在/home/wwwroot/3DCEList/里添加***.txt作订阅链接  
+#其他操作  
+service aria2 start | stop | restart | status  
 其他版本https://github.com/wulabing  
   
      
