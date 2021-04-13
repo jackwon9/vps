@@ -89,6 +89,7 @@ apt-get install fuse
 apt-get install rclone  
 rclone config  
 ```
+#挂载Google Drive  
 ```bash
 rclone mount gd:/1 /256/gd --allow-other --allow-non-empty --vfs-cache-mode writes & df -h  
 ```
