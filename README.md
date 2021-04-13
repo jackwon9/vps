@@ -81,7 +81,14 @@ service aria2 start | stop | restart | status
   
   
 ##   【BuyVM Block Storage（数据盘）挂载方法】  https://cyhour.com/1110/  
-
+```bash
+查看scsi文件名
+ls /dev/disk/by-id/
+挂载
+mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256
+开机运行
+echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256 ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
+```
 
 ## 【rclone挂载谷歌团队网盘】  https://omo.moe/archives/103/  
 ```bash
