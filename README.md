@@ -89,7 +89,10 @@ apt-get install fuse
 apt-get install rclone  
 rclone config  
 ```
-
+```bash
+rclone mount gd:/1 /256/gd --allow-other --allow-non-empty --vfs-cache-mode writes & df -h  
+```
+     
      
 ## 【v2ray安装】     
 ```bash
