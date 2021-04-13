@@ -104,12 +104,13 @@ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.c
 service v2ray start | stop | restart | status  
 其他版本https://github.com/wulabing  
   
-     
-## 【Linux更新指令】   https://www.cnblogs.com/qiantan/p/11167276.html  
-
 
 ## 【其他指令】  
 ```bash
 Debian/Ubuntu：apt-get install fuse  
 Centos：yum install fuse
+  
+apt update
+apt-get install wget  
+  
 ```
