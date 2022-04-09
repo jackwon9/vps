@@ -119,4 +119,6 @@ Centos：yum install fuse
   
 apt update
 apt-get install wget
+
+curl: command not found解决方法：apt-get update -y && apt-get install curl -y
 ```
