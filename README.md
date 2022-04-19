@@ -110,7 +110,13 @@ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.c
 #其他操作  
 service v2ray start | stop | restart | status  
 其他版本https://github.com/wulabing  
-  
+
+
+## 【Hysteria安装】 
+```bash
+bash <(curl -fsSL https://git.io/hysteria.sh)
+```
+
 
 ## 【其他指令】  
 ```bash
