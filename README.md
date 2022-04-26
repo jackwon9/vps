@@ -128,7 +128,7 @@ Centos：
 ```bash
 yum install fuse
 ```
-##【其他】
+## 【其他】
 ```bash
 apt update
 ```
