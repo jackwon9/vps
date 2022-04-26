@@ -119,13 +119,25 @@ bash <(curl -fsSL https://git.io/hysteria.sh)
 
 
 ## 【其他指令】  
+Debian/Ubuntu：  
 ```bash
-Debian/Ubuntu：apt-get install fuse
-Centos：yum install fuse
-  
+apt-get install fuse
+```
+
+Centos：  
+```bash
+yum install fuse
+```
+
+```bash
 apt update
+```
+
+```bash
 apt-get install wget
+```
 
 curl: command not found解决方法：
+```bash
 apt-get update -y && apt-get install curl -y
 ```
