@@ -139,6 +139,9 @@ apt-get install wget
 ```bash
 apt-get install sudo
 ```
+```bash
+apt-get install curl
+```
 
 curl: command not found解决方法：
 ```bash
