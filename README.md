@@ -109,7 +109,25 @@ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.c
 在/home/wwwroot/3DCEList/里添加***.txt作订阅链接  
 #其他操作  
 service v2ray start | stop | restart | status  
-其他版本https://github.com/wulabing  
+其他版本https://github.com/wulabing
+
+#无法启动方法
+```
+可以执行 systemctl status v2ray 看到脚本的路径是哪？
+
+● systemctl start v2ray
+
+● v2ray.service - V2Ray Service
+Loaded: loaded (/etc/systemd/system/v2ray.service; enabled; vendor preset: enabled)
+Active: active (running) since Thu 2022-09-08 01:09:09 CST; 34s ago
+
+然后将etc/systemd/system/v2ray.service 文件中的
+/usr/bin/v2ray/v2ray -config /etc/v2ray/config.json
+改成
+/usr/bin/v2ray/v2ray run -config /etc/v2ray/config.json
+加一个run即可 ，再命令行里执行一下
+systemctl daemon-reload
+```
 
 
 ## 【Hysteria安装】 
