@@ -126,6 +126,15 @@ Active: active (running) since Thu 2022-09-08 01:09:09 CST; 34s ago
 改成
 /usr/bin/v2ray/v2ray run -config /etc/v2ray/config.json
 加一个run即可 ，再命令行里执行一下
+
+或者
+
+vim /etc/systemd/system/v2ray.service.d/10-donot_touch_single_conf.conf
+把
+ExecStart=/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json 
+改为
+ExecStart=/usr/local/bin/v2ray run -config /usr/local/etc/v2ray/config.json
+
 systemctl daemon-reload
 ```
 
