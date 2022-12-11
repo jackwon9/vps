@@ -113,27 +113,42 @@ service v2ray start | stop | restart | status
 
 #无法启动方法
 ```
-可以执行 systemctl status v2ray 看到脚本的路径是哪？
+vi /etc/systemd/system/v2ray.service
 
-● systemctl start v2ray
+[Unit]
+Description=V2Ray Service
+After=network.target nss-lookup.target
 
-● v2ray.service - V2Ray Service
-Loaded: loaded (/etc/systemd/system/v2ray.service; enabled; vendor preset: enabled)
-Active: active (running) since Thu 2022-09-08 01:09:09 CST; 34s ago
+[Service]
+User=root
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+NoNewPrivileges=true
+Environment=V2RAY_LOCATION_ASSET=/usr/local/lib/v2ray/
+ExecStart=/usr/local/bin/v2ray run -config /etc/v2ray/config.json
+Restart=on-failure
 
-然后将etc/systemd/system/v2ray.service 文件中的
-/usr/bin/v2ray/v2ray -config /etc/v2ray/config.json
-改成
-/usr/bin/v2ray/v2ray run -config /etc/v2ray/config.json
-加一个run即可 ，再命令行里执行一下
+[Install]
+WantedBy=multi-user.target
 
-或者
+还有
 
-vim /etc/systemd/system/v2ray.service.d/10-donot_touch_single_conf.conf
-把
-ExecStart=/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json 
-改为
-ExecStart=/usr/local/bin/v2ray run -config /usr/local/etc/v2ray/config.json
+[Unit]
+Description=V2Ray Service
+After=network.target nss-lookup.target
+
+[Service]
+User=root
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+NoNewPrivileges=true
+Environment=V2RAY_LOCATION_ASSET=/usr/local/lib/v2ray/
+ExecStart=/usr/local/bin/v2ray run -config /etc/v2ray/%i.json
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
 
 systemctl daemon-reload
 ```
