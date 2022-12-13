@@ -132,6 +132,7 @@ Restart=on-failure
 WantedBy=multi-user.target
 
 还有
+vi /etc/systemd/system/v2ray@.service
 
 [Unit]
 Description=V2Ray Service
