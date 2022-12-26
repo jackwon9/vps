@@ -153,6 +153,8 @@ WantedBy=multi-user.target
 然后
 
 systemctl daemon-reload
+systemctl restart v2ray
+systemctl status v2ray
 ```
 
 
