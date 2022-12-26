@@ -111,7 +111,7 @@ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.c
 service v2ray start | stop | restart | status  
 其他版本https://github.com/wulabing
 
-#无法启动方法
+#无法启动解决方法
 ```
 vi /etc/systemd/system/v2ray.service
 ```
