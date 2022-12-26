@@ -114,7 +114,8 @@ service v2ray start | stop | restart | status
 #无法启动方法
 ```
 vi /etc/systemd/system/v2ray.service
-
+```
+```
 [Unit]
 Description=V2Ray Service
 After=network.target nss-lookup.target
@@ -130,10 +131,12 @@ Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
-
+```
 还有
+```
 vi /etc/systemd/system/v2ray@.service
-
+```
+```
 [Unit]
 Description=V2Ray Service
 After=network.target nss-lookup.target
@@ -149,9 +152,9 @@ Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
-
+```
 然后
-
+```
 systemctl daemon-reload
 systemctl restart v2ray
 systemctl status v2ray
