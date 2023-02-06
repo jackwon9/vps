@@ -93,9 +93,13 @@ echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256 ext4 defaults,nofail,dis
 ```
 
 ## 【rclone挂载谷歌团队网盘】  https://omo.moe/archives/103/  
-```bash
+```
 apt-get install fuse
+```
+```
 apt-get install rclone
+```
+```
 rclone config
 ```
 #挂载Google Drive  
