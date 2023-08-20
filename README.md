@@ -172,6 +172,16 @@ systemctl status v2ray
 bash <(curl -fsSL https://git.io/hysteria.sh)
 ```
 
+##   【Dynu綁定動態ip步驟】 
+```bash
+curl -4 "https://api.dynu.com/nic/update?hostname=gungkaicyuntw.ddnsfree.com&password=huangdadad8964..."
+```
+```
+crontab -e
+```
+```
+*/1 * * * * curl -4 "https://api.dynu.com/nic/update?hostname=gungkaicyuntw.ddnsfree.com&password=huangdadad8964..." >/dev/null 2>&1
+```
 
 ## 【其他指令】  
 Debian/Ubuntu：  
