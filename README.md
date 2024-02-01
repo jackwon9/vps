@@ -207,8 +207,3 @@ apt-get install sudo
 ```bash
 apt-get install curl
 ```
-
-curl: command not found解决方法：
-```bash
-apt-get update -y && apt-get install curl -y
-```
