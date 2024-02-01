@@ -84,10 +84,16 @@ ls /dev/disk/by-id/
 
 挂载
 ```bash
+mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256/
+```
+```bash
 mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /www/xray_web/256/
 ```
 
 开机运行
+```bash
+echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256/ ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
+```
 ```bash
 echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /www/xray_web/256/ ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
 ```
