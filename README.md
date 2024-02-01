@@ -20,7 +20,7 @@ centos：yum install ca-certificates wget -y && update-ca-trust force-enable
 debian/ubuntu：apt-get install ca-certificates wget -y && update-ca-certificates
 ```
 ```
-wget -O tcpx.sh "https://github.com/ylx2016/Linux-NetSpeed/raw/master/tcpx.sh" && chmod +x tcpx.sh && ./tcpx.sh
+wget -O tcp.sh "https://github.com/ylx2016/Linux-NetSpeed/raw/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
 或者Debian系统  
 ```bash
