@@ -98,21 +98,13 @@ echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256/ ext4 defaults,nofail,di
 echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /www/xray_web/256/ ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
 ```
 
-## 【rclone挂载谷歌团队网盘】  https://omo.moe/archives/103/  
+Gost轉發脚本
 ```
-apt-get install fuse
+wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 ```
-```
-apt-get install rclone
-```
-```
-rclone config
-```
-#挂载Google Drive  
-```bash
-rclone mount gd:/1 /256/gd --allow-other --allow-non-empty --vfs-cache-mode writes & df -h
-```
-     
+![image](https://raw.githubusercontent.com/jackwon9/vps/main/%E4%B8%AD%E8%BD%89%E6%A9%9F.PNG)
+![image](https://raw.githubusercontent.com/jackwon9/vps/main/%E8%90%BD%E5%9C%B0%E6%A9%9F.PNG)
+
      
 ## 【v2ray安装】     
 ```bash
