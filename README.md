@@ -29,13 +29,6 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 lsmod | grep bbr
 ```  
-
-   
-##   【ccaa安装】  
-```bash
-bash <(curl -Lsk https://raw.githubusercontent.com/jackwon9/ccaa/master/ccaa.sh)
-``` 
- 
    
 ##   【手动安装File Browser文件管理器】 https://www.xiaoz.me/archives/14299  
 ```bash
@@ -98,7 +91,7 @@ echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256/ ext4 defaults,nofail,di
 echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /www/xray_web/256/ ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
 ```
 
-Gost轉發脚本
+## 【Gost轉發脚本】  
 ```
 wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 ```
