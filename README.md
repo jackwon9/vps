@@ -79,9 +79,6 @@ ls /dev/disk/by-id/
 ```bash
 mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256/
 ```
-```bash
-mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /www/xray_web/256/
-```
 
 开机运行
 ```bash
