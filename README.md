@@ -92,7 +92,7 @@ https://github.com/zhboner/realm/releases
 
 创建realm配置文件：
 ```
-nano /root/realm.toml
+vi /root/realm.toml
 ```
 复制粘贴以下内容
 ```
@@ -110,7 +110,7 @@ remote = "1.1.1.1:443"
 ```
 创建自启动服务项：
 ```
-nano /etc/systemd/system/realm.service
+vi /etc/systemd/system/realm.service
 ```
 ```
 [Unit]
