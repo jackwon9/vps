@@ -86,12 +86,54 @@ echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1546 /256/ ext4 defaults,nofail,di
 ```
 
 
-## 【Gost轉發脚本】  
+## 【Realm端口转发工具安装教程】  
+下载realm-x86_64-unknown-linux-gnu.tar.gz版本解压上传到VPS
+https://github.com/zhboner/realm/releases
+
+创建realm配置文件：
 ```
-wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
+nano /root/realm.toml
 ```
-![image](https://raw.githubusercontent.com/jackwon9/vps/main/%E4%B8%AD%E8%BD%89%E6%A9%9F.PNG)
-![image](https://raw.githubusercontent.com/jackwon9/vps/main/%E8%90%BD%E5%9C%B0%E6%A9%9F.PNG)
+复制粘贴以下内容
+```
+[network]
+no_tcp = false
+use_udp = true
+
+[[endpoints]]
+listen = "0.0.0.0:中转机转发端口"
+remote = "落地IP:端口"
+
+[[endpoints]]
+listen = "0.0.0.0:54321"
+remote = "1.1.1.1:443"
+```
+创建自启动服务项：
+```
+nano /etc/systemd/system/realm.service
+```
+```
+[Unit]
+Description=realm
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+RestartSec=5s
+DynamicUser=true
+ExecStart=/root/realm -c /root/realm.toml
+
+[Install]
+WantedBy=multi-user.target
+```
+执行重载系统服务和启动realm服务：
+```
+systemctl daemon-reload
+systemctl enable realm && systemctl start realm
+```
 
      
 ## 【v2ray安装】     
