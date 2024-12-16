@@ -132,7 +132,16 @@ WantedBy=multi-user.target
 执行重载系统服务和启动realm服务：
 ```
 systemctl daemon-reload
-systemctl enable realm && systemctl start realm
+systemctl enable realm
+```
+```
+systemctl start realm
+```
+```
+systemctl stop realm
+```
+```
+systemctl restart realm
 ```
 
      
