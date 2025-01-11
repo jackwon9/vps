@@ -133,8 +133,6 @@ WantedBy=multi-user.target
 ```
 systemctl daemon-reload
 systemctl enable realm
-```
-```
 systemctl start realm
 ```
 ```
