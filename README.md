@@ -242,3 +242,45 @@ apt-get install sudo
 ```bash
 apt-get install curl
 ```
+
+##【内存清理】
+```
+echo 1 > /proc/sys/vm/drop_caches
+echo 2 > /proc/sys/vm/drop_caches
+echo 3 > /proc/sys/vm/drop_caches
+free -m
+```
+
+##【Debian替换软件源】
+```
+https://wph.im/190.html
+```
+
+##【screen安装】
+```
+apt install screen
+```
+```
+screen -S 创建窗口
+```
+```
+screen -r 打开窗口
+```
+
+##【ip地址查询】
+```
+curl 4.ipw.cn
+```
+```
+curl 6.ipw.cn
+```
+
+##【iperf3安装】
+```
+https://www.xxshell.com/2664.html
+```
+
+##【流媒体检测】
+```
+https://github.com/lmc999/RegionRestrictionCheck
+```
