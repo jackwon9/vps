@@ -287,5 +287,5 @@ https://github.com/lmc999/RegionRestrictionCheck
 
 ##【Debian修改DNS】
 ```
-[https://github.com/lmc999/RegionRestrictionCheck](https://www.vdj.me/archives/252.html)
+https://www.vdj.me/archives/252.html
 ```
